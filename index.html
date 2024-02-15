@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Reflection Scroll Effect | Demo 1 | Codrops</title>
+		<meta name="description" content="An experimental reflection effect where we simulate a reflected page and scroll it along with the content." />
+		<meta name="keywords" content="reflection, scroll, scroll animation, gsap" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/plq1wge.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";</script>
+	</head>
+	<body class="demo-1 loading">
+		<main>
+			<header class="frame">
+				<h1 class="frame__title">Reflection Scroll</h1> 
+				<a class="frame__back" href="https://tympanus.net/codrops/?p=">Article</a>
+				<a class="frame__prev" href="https://tympanus.net/Development/RevealingWebGLImages">Previous demo</a>
+				<nav class="frame__demos">
+					<span>Demo 1</span>
+					<a href="index2.html">Demo 2</a>
+				</nav>
+			</header>
+			<div class="content">
+				<h2 class="content__title">Mosho</h2>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">XJ9</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">ZQ8</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/3.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">KRY</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/4.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">XVQ</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/5.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">JXW</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/6.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">LZM</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<h2 class="content__title">Washo</h2>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/7.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">WMR</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/8.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">PNY</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/9.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">QGF</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/10.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">FJT</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/11.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">BQZ</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/12.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">VXH</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<h2 class="content__title">Umot</h2>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/13.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">MXT</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/14.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">QSY</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/15.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">VBG</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/16.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">LYQ</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">XJ9</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">ZQ8</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<h2 class="content__title">Mosho</h2>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">XJ9</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">ZQ8</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/3.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">KRY</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/4.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">XVQ</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/5.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">JXW</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/6.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">LZM</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<h2 class="content__title">Washo</h2>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/7.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">WMR</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/8.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">PNY</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/9.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">QGF</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/10.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">FJT</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/11.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">BQZ</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/12.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">VXH</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<h2 class="content__title">Umot</h2>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/13.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">MXT</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/14.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">QSY</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/15.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">VBG</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/16.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">LYQ</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">XJ9</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<figure class="item">
+					<div class="item__inner">
+						<div class="item__img">
+							<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+						</div>
+						<figcaption class="item__caption">
+							<h3 class="item__caption-title">ZQ8</h3>
+						</figcaption>
+					</div>
+				</figure>
+				<div class="credits">
+					<p>Made by <a href="https://twitter.com/codrops">@codrops</a></p>
+					<p><a href="https://tympanus.net/codrops/collective/">Subscribe</a> to get the latest in frontend twice a week.</p>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="content content--reflection">
+					<h2 class="content__title">Mosho</h2>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">XJ9</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">ZQ8</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/3.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">KRY</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/4.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">XVQ</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/5.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">JXW</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/6.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">LZM</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<h2 class="content__title">Washo</h2>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/7.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">WMR</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/8.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">PNY</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/9.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">QGF</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/10.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">FJT</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/11.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">BQZ</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/12.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">VXH</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<h2 class="content__title">Umot</h2>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/13.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">MXT</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/14.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">QSY</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/15.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">VBG</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/16.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">LYQ</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">XJ9</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">ZQ8</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<h2 class="content__title">Mosho</h2>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">XJ9</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">ZQ8</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/3.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">KRY</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/4.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">XVQ</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/5.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">JXW</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/6.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">LZM</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<h2 class="content__title">Washo</h2>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/7.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">WMR</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/8.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">PNY</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/9.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">QGF</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/10.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">FJT</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/11.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">BQZ</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/12.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">VXH</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<h2 class="content__title">Umot</h2>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/13.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">MXT</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/14.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">QSY</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/15.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">VBG</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/16.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">LYQ</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/1.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">XJ9</h3>
+							</figcaption>
+						</div>
+					</figure>
+					<figure class="item">
+						<div class="item__inner">
+							<div class="item__img">
+								<div class="item__img-inner" style="background-image:url(img/2.jpg);"></div>
+							</div>
+							<figcaption class="item__caption">
+								<h3 class="item__caption-title">ZQ8</h3>
+							</figcaption>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script type="module" src="js/demo1/index.js"></script>
+	</body>
+</html>
