@@ -1,6 +1,6 @@
 # Reflection Scroll
 
-An experimental reflection effect where we simulate a reflected page and scroll it along with the content.
+A decorative reflection effect where we simulate a reflected page and scroll it along with the content.
 
 ![Reflection Scroll](https://tympanus.net/codrops/wp-content/uploads/2024/02/reflectionscroll_feat.jpg)
 
